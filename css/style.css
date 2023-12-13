@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/*
+cores:
+#6E6057  bem escuro
+#705165  escuro
+#F0F4F8  branco
+#A0E7E5  azul
+#FFAEBC  rosa
+#B4F8C8  verde
+*/
+
+body{
+    margin: 0 13% 0 13%;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(../img/fundo.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color:#705165;
+}
+#header-todo{
+    background-color: cadetblue;
+    background-image: linear-gradient(to top, cadetblue, rgb(40, 166, 173));
+    color: #F0F4F8;
+    align-items: center;
+    text-align: center;
+    margin-top: -20px;
+    border-radius: 0 0 75px 75px;
+}
+
+h1{
+    padding: 10px 10px 0 10px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+h2{
+    margin: 0 4px;
+    margin-top: -10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#container-forms{
+    background-color: #A0E7E5;
+    background-image: linear-gradient(to top, #c2f3ef, #A0E7E5);
+    margin: 0 75px;
+    padding: 20px; 
+    border-radius:  0 0 10rem 10rem;
+    display: flex;
+}
+
+
+#container-todo-add form{
+    display: flex;
+    border-radius: 20px;
+}
+
+#container-todo-add input{
+    width: 350px;
+    margin: 0 7px;
+    border-radius: 20px;
+    background-color: #F0F4F8;
+}
+
+#container-todo-add button{
+    background-color: #F0F4F8;
+    border: 0px;
+    color: #705165;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#container-todo-add button:hover{
+    background-color: cadetblue;
+    color: #F0F4F8;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#container-todo-filter, #container-todo-add{
+    display: flex;
+    flex-direction: row;
+    align-items: first baseline;
+
+}
+
+#filter{
+    background-color: #F0F4F8;
+    color: #705165;
+    border-radius: 20px;
+}
+
+#container-todo-add input, #container-todo-filter select{
+    border: 0px solid #CCC;
+    padding: 7px;
+}
+
+#container-tasks{
+    margin: 0 150px;
+}
+
+.todo{
+    background-color: #F0F4F8;
+    background-image: linear-gradient(to right, white, #F0F4F8);
+    padding: 5px;
+    margin: 10px 20px 10px 20px;
+    display: flex;
+    transition: 0.4s;
+    border-radius: 40px;
+}
+
+.todo p{
+    text-transform: capitalize;
+    width: 90%;
+}
+
+.todo button{
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px solid #1b2c8200;
+    color: #FFAEBC;
+    cursor: pointer;
+}
+
+.todo i {
+    pointer-events: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+
+.done{
+    background-color: #FFAEBC;
+    background-image: linear-gradient(to left, #FFAEBC, #fc8b9e);    
+    transition: 1s;
+}
+
+.done p{
+    color: #F0F4F8;
+    text-decoration: line-through;
+    text-transform: capitalize;
+    text-decoration-thickness: 2px;
+    font-style: italic;
+}
+
+.done i{
+    color: #F0F4F8;
+}
+
