@@ -44,6 +44,11 @@ h2{
     font-family: 'Courier New', Courier, monospace;
 }
 
+.suave{
+    font-size: 13px;
+    font-weight: lighter;
+}
+
 #container-forms{
     background-color: #A0E7E5;
     background-image: linear-gradient(to top, #c2f3ef, #A0E7E5);
